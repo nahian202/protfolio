@@ -1,0 +1,470 @@
+/*font link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    height: 400vh;
+    position: relative;
+    background-image: url(images/file.jpg) ;
+    background-size: cover;
+    
+    background-attachment: fixed;
+    
+}
+
+body, .Home{
+    
+    background-color: rgb(0, 0, 0,0.5);
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*navbar star*/
+
+nav {
+    
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+nav .nav-bars {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-bars .nav-links {
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.nav-bars  {
+    margin: 0 5px;
+    list-style: none;
+}
+
+nav .nav-bars span a{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-links{
+    margin: 0;
+}
+
+.nav-links li a{
+    color: #ffffff;
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-bars .searchBox{
+    display: flex;
+    align-items: center;
+    bottom: 8px;
+    
+}
+
+.nav-bars .searchToggle .Search{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.searchToggle i{
+    position: absolute;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    
+}
+
+.searchToggle i.cancel{
+    margin-bottom: 7px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchToggle.active i.cancel{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.searchToggle.active i.search{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchBox{
+    position: relative;
+}
+
+.searchBox .search-field{
+    position: absolute;
+    bottom: -115px;
+    right: -31px;
+    height: 50px;
+    width: 300px;
+    background-color: rgb(0, 0, 0,0.5);
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.searchToggle.active ~ .search-field{
+    bottom: -104px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-field::before{
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: -4px;
+    height: 12px;
+    width: 12px;
+    background-color: rgb(0, 0, 0,0.1);
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.search-field input{
+    width: 100%;
+    height: 100%;
+    padding: 0 45px 0 15px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.search-field i{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.6);
+    right: 8px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/*navbar end*/
+
+/*home section*/
+
+.Home{
+   
+       background-color: rgb(0, 0, 0,0.5);
+}
+
+.home{
+    padding-top: 200px;
+}
+
+.heading {
+     
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-style:normal;
+    font-family: "Pacifico", serif;
+}
+
+.heading p{
+    margin: 0;
+    margin-bottom: -39px;
+    padding-left: 265px;
+    font-size: 20px;
+    font-style:italic;
+    font-family: "Pacifico", serif;
+}
+.heading h1{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.paragraph{
+    margin-top: 40px;
+
+    color: rgb(255, 255, 255);
+}
+
+.btn-d .Btn{
+    width: 170px;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+/*home section end*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Pacifico&family=Poppins&display=swap');
+.Menu{
+    height: 100vh;
+    margin-top: 239px;
+}
+
+.Menu-h{
+    padding-top: 20px;
+    height: 20vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    border: rgb(0, 50, 0,0.5) 10px solid;
+    border-left: none;
+    border-right: none;
+}
+
+.Menu-h h1{
+    font-size: 40px;
+}
+
+#menu-slider{
+    font-family: "Inter", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255,0.5);
+    height: 70vh;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background-color: rgb(0, 50, 0,0.5);
+    padding: 18px;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: black;
+    margin-top: 8px;
+}
+
+.c-p{
+    color: black;
+}
+
+.card-list{
+    margin-bottom: 40px;
+}
+
+/*about start*/
+.b-a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.about{
+    height: 90vh;
+}
+.a-h{
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 10px rgb(0, 0, 0) solid;
+    border-left: none;
+    border-right: none;
+}
+
+.a-h-i h2, .a-h-i h4, .a-h-i p{
+    padding-bottom: 10px;
+}
+
+.a-h-i{
+    height: 30vh;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.Card  {
+    margin: 10px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    
+    
+}
+
+.Cards{
+    margin-left:17.5%;
+    
+}
+
+.c-h {
+   height: 90vh;
+   padding-top: 15px;
+   color: #ffffff;
+   background-color: rgba(0, 0, 0, 0.5); 
+   
+   
+   border-bottom: 10px rgb(0, 0, 0) solid;
+}
+
+.c-h-i {
+    margin-left: 45.5%;
+}
+
+#delivery-s{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 91vh;
+}
+
+
+
+.D-S-I h4,.D-S-I p , .D-S-I button , .D-S-I input{
+    margin-top: 50px;
+    color: #000000;
+}
+
+.D-S-I h4{
+    margin-top: 150px;
+    font-size: 40px;
+}
+
+.D-S-I button{
+    background-color: rgb(40, 167, 69);
+    color: #000000;
+    border: #000000 1px solid;
+}
+
+
+
+.D-S-I input{
+    background-color: rgb(40, 167, 69);
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    height: 38px;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.D-S-I input::placeholder{
+    color: rgb(0, 0, 0,0.3);
+}
+
+#footer {
+    height: 60vh;
+    background-color: #ffffff;
+}
+
+#footer .f-i{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.f-1 {
+    
+    color: green;
+}
+
+.f-i h1 , .f-i p {
+    margin-top: 50px;
+    color: green;
+}
+
+.f-i li a{
+    background-color: rgb(40, 167, 69);
+    border: 1px solid rgb(40, 167, 69, 0.5);
+    border-radius: 10px;
+    height: 30px;
+    width: 500px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    color: rgb(0, 84, 0);
+
+}
+    
+
+.f-i input{
+    margin-top: 50px;
+    background-color: rgb(40, 167, 69, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 1px solid rgb(40, 167, 69);
+    width: 500px;
+    padding-left: 10px;
+    
+}
+
+.f-i li{
+    list-style: none;
+}
+
+.Footer{
+    height: 60vh;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.F-I ul{
+    margin-top: 60px;
+    list-style: none;
+}
+
+.Footer .F-B h3{
+    margin-top: 60px;
+}
